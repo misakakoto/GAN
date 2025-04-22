@@ -107,7 +107,7 @@ if __name__ == '__main__':
 	os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 
 	# save generated images
-	sample_dir = 'Samples/mnist_cgan_mlp'
+	sample_dir = 'Samples/mnist_cgan_mlp_new'
 	if not os.path.exists(sample_dir):
 		os.makedirs(sample_dir)
 
