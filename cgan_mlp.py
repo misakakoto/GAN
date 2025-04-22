@@ -54,7 +54,7 @@ class CGAN():
 		self.G_solver = tf.train.AdamOptimizer().minimize(self.G_loss, var_list=self.generator.vars)
 	
 		for var in self.discriminator.vars:
-			print var.name
+			print (var.name)
 			
 		self.saver = tf.train.Saver()
 		gpu_options = tf.GPUOptions(allow_growth=True)
